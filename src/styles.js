@@ -7,10 +7,15 @@ const styles = theme => ({
     button: {
         width: `100%`,
         borderRadius: 0,
+        boxShadow: "none",
     },
     editorContainer: {
         height: '100%',
         boxSizing: 'border-box'
+    },
+    textField: {
+        width: `100%`,
+        marginTop: 0,
     }
 });
 

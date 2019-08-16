@@ -4,6 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
 import styles from './styles';
 import './App.css';
 
@@ -25,9 +26,15 @@ class App extends React.Component {
       <Grid container direction="row">
         <Grid item md={2} lg={2}>
           <Paper className={classes.paper}>
-            <Button variant="contained" color="secondary" className={classes.button}>
+            <Button variant="contained" color="primary" className={classes.button}>
               Add Note
             </Button>
+            <TextField
+              id="standard-uncontrolled"
+              className={classes.textField}
+              margin="normal"
+              inputProps={{style: { padding: `10px`}}}
+            />
           </Paper>
         </Grid>
         <Grid item md={10} lg={10}>
